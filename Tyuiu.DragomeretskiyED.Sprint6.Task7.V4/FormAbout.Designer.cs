@@ -39,9 +39,9 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(170, 175);
+            this.pictureBox1.Size = new System.Drawing.Size(156, 172);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -49,7 +49,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(177, 9);
+            this.label1.Location = new System.Drawing.Point(174, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(297, 117);
             this.label1.TabIndex = 1;
@@ -57,9 +57,9 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
             // 
             // buttonOK_DED
             // 
-            this.buttonOK_DED.Location = new System.Drawing.Point(393, 143);
+            this.buttonOK_DED.Location = new System.Drawing.Point(392, 148);
             this.buttonOK_DED.Name = "buttonOK_DED";
-            this.buttonOK_DED.Size = new System.Drawing.Size(75, 23);
+            this.buttonOK_DED.Size = new System.Drawing.Size(75, 30);
             this.buttonOK_DED.TabIndex = 2;
             this.buttonOK_DED.Text = "Ок";
             this.buttonOK_DED.UseVisualStyleBackColor = true;
@@ -69,7 +69,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 178);
+            this.ClientSize = new System.Drawing.Size(479, 190);
             this.Controls.Add(this.buttonOK_DED);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);

@@ -17,7 +17,6 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
         public FormMain()
         {
             InitializeComponent();
-
             openFileDialogTask_DED.Filter = "Значения, разделенные запятыми(*.csv)|*.csv|Всефайлы(*.*)|*.*";
             saveFileDialogMatrix_DED.Filter = "Значения, разделенные запятыми(*.csv)|*.csv|Всефайлы(*.*)|*.*";
         }
@@ -27,23 +26,6 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
         static int columns;
 
         DataService ds = new DataService();
-
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-            dataGridViewInput_DED.RowCount = 50;
-            dataGridViewOutput_DED.RowCount = 50;
-
-            dataGridViewInput_DED.ColumnCount = 50;
-            dataGridViewOutput_DED.ColumnCount = 50;
-
-
-
-            for (int i = 0; i < 50; i++)
-            {
-                dataGridViewInput_DED.Columns[i].Width = 25;
-                dataGridViewOutput_DED.Columns[i].Width = 25;
-            }
-        }
 
         public int[,] LoadFromData(string path)
         {
@@ -65,12 +47,6 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
                 }
             }
             return array;
-        }
-
-        private void buttonInfo_DED_Click(object sender, EventArgs e)
-        {
-            FormAbout formAbout = new FormAbout();
-            formAbout.ShowDialog();
         }
 
         private void buttonOpenFile_DED_Click(object sender, EventArgs e)
@@ -115,7 +91,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
                     dataGridViewOutput_DED.Rows[r].Cells[c].Value = arrayValues[r, c];
                 }
             }
-            buttonSave_DED.Enabled = true;    
+            buttonSave_DED.Enabled = true;
         }
 
         private void buttonSave_DED_Click(object sender, EventArgs e)
@@ -152,6 +128,29 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
                 }
                 File.AppendAllText(path, str + Environment.NewLine);
                 str = "";
+            }
+        }
+
+        private void buttonInfo_DED_Click(object sender, EventArgs e)
+        {
+            FormAbout formAbout = new FormAbout();
+            formAbout.ShowDialog();
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            dataGridViewInput_DED.RowCount = 50;
+            dataGridViewOutput_DED.RowCount = 50;
+
+            dataGridViewInput_DED.ColumnCount = 50;
+            dataGridViewOutput_DED.ColumnCount = 50;
+
+
+
+            for (int i = 0; i < 50; i++)
+            {
+                dataGridViewInput_DED.Columns[i].Width = 25;
+                dataGridViewOutput_DED.Columns[i].Width = 25;
             }
         }
 

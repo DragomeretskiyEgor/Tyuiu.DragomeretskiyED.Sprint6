@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BC48F368-A7B3-458D-B7AD-513F5248CDA0}</ProjectGuid>
+    <ProjectGuid>{6F611BEF-A557-4A0A-8DA8-97F3EE5353CD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Tyuiu.DragomeretskiyED.Sprint6.Task7.V4.Test</RootNamespace>

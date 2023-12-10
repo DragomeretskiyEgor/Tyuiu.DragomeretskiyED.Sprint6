@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{53A22E41-762C-485B-947C-F81EE9B0EEB1}</ProjectGuid>
+    <ProjectGuid>{A4F6D0EA-0B97-44E3-8E17-F5EEEF96467F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Tyuiu.DragomeretskiyED.Sprint6.Task7.V4</RootNamespace>
     <AssemblyName>Tyuiu.DragomeretskiyED.Sprint6.Task7.V4</AssemblyName>
