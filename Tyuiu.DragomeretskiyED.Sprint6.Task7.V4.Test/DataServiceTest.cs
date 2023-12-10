@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-
 using System.IO;
 
 using Tyuiu.DragomeretskiyED.Sprint6.Task7.V4.Lib;

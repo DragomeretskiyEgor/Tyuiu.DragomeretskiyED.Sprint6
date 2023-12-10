@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using System.IO;
-
 using tyuiu.cources.programming.interfaces.Sprint6;
-
 
 namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4.Lib
 {

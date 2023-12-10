@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
 using Tyuiu.DragomeretskiyED.Sprint6.Task7.V4.Lib;
 
 namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
@@ -18,6 +17,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
         public FormMain()
         {
             InitializeComponent();
+
             openFileDialogTask_DED.Filter = "Значения, разделенные запятыми(*.csv)|*.csv|Всефайлы(*.*)|*.*";
             saveFileDialogMatrix_DED.Filter = "Значения, разделенные запятыми(*.csv)|*.csv|Всефайлы(*.*)|*.*";
         }
@@ -27,6 +27,24 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
         static int columns;
 
         DataService ds = new DataService();
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            dataGridViewInput_DED.RowCount = 50;
+            dataGridViewOutput_DED.RowCount = 50;
+
+            dataGridViewInput_DED.ColumnCount = 50;
+            dataGridViewOutput_DED.ColumnCount = 50;
+
+
+
+            for (int i = 0; i < 50; i++)
+            {
+                dataGridViewInput_DED.Columns[i].Width = 25;
+                dataGridViewOutput_DED.Columns[i].Width = 25;
+            }
+        }
+
         public int[,] LoadFromData(string path)
         {
             string file = File.ReadAllText(path);
@@ -49,7 +67,13 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
             return array;
         }
 
-        private void buttonExploreData_DED_Click(object sender, EventArgs e)
+        private void buttonInfo_DED_Click(object sender, EventArgs e)
+        {
+            FormAbout formAbout = new FormAbout();
+            formAbout.ShowDialog();
+        }
+
+        private void buttonOpenFile_DED_Click(object sender, EventArgs e)
         {
             openFileDialogTask_DED.ShowDialog();
             openFile = openFileDialogTask_DED.FileName;
@@ -130,47 +154,25 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
                 str = "";
             }
         }
-        private void buttonHelp_DED_Click(object sender, EventArgs e)
+
+        private void buttonOpenFile_DED_MouseEnter(object sender, EventArgs e)
         {
-                FormAbout formAbout = new FormAbout();
-                formAbout.ShowDialog();
-        }
-
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-            dataGridViewInput_DED.RowCount = 50;
-            dataGridViewOutput_DED.RowCount = 50;
-
-            dataGridViewInput_DED.ColumnCount = 50;
-            dataGridViewOutput_DED.ColumnCount = 50;
-
-            
-
-            for (int i = 0; i < 50; i++)
-            {
-                dataGridViewInput_DED.Columns[i].Width = 25;
-                dataGridViewOutput_DED.Columns[i].Width = 25;
-            }
-        }
-
-        private void buttonExploreData_DED_MouseEnter(object sender, EventArgs e)
-        {
-            toolTipButton.ToolTipTitle = "Открыть файл";
+            toolTipButton_DED.ToolTipTitle = "Открыть файл";
         }
 
         private void buttonDone_DED_MouseEnter(object sender, EventArgs e)
         {
-            toolTipButton.ToolTipTitle = "Выполнить";
+            toolTipButton_DED.ToolTipTitle = "Выполнить";
         }
 
         private void buttonSave_DED_MouseEnter(object sender, EventArgs e)
         {
-            toolTipButton.ToolTipTitle = "Сохранить в файл";
+            toolTipButton_DED.ToolTipTitle = "Сохранить в файл";
         }
 
-        private void buttonHelp_DED_MouseEnter(object sender, EventArgs e)
+        private void buttonInfo_DED_MouseEnter(object sender, EventArgs e)
         {
-            toolTipButton.ToolTipTitle = "Справка";
+            toolTipButton_DED.ToolTipTitle = "Справка";
         }
     }
 }
