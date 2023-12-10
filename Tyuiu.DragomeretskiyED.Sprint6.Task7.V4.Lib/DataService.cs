@@ -39,7 +39,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4.Lib
                     array[1, c] = 4;
                 }
             }
-            return array; 
+            return array;  
         }
     }
 }

@@ -115,7 +115,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
                     dataGridViewOutput_DED.Rows[r].Cells[c].Value = arrayValues[r, c];
                 }
             }
-            buttonSave_DED.Enabled = true;  
+            buttonSave_DED.Enabled = true;   
         }
 
         private void buttonSave_DED_Click(object sender, EventArgs e)
