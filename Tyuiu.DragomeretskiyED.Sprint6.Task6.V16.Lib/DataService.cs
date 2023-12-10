@@ -11,7 +11,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task6.V16.Lib
 {
     public class DataService : ISprint6Task6V16
     {
-        public string CollectTextFromFile(string str, string path)
+        public string CollectTextFromFile(string path)
         {
             string words = ""; ;
             using (StreamReader reader = new StreamReader(path))
