@@ -178,7 +178,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
             this.Controls.Add(this.buttonDone_DED);
             this.Controls.Add(this.buttonExploreData_DED);
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.Text = "Спринт 6 | Таск 7 | Вариант 4 | Драгомерецкий Е. Д.";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
