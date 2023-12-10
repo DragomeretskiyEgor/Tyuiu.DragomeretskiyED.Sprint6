@@ -33,9 +33,9 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task6.V16
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.openFileDialogTask_DED = new System.Windows.Forms.OpenFileDialog();
             this.groupBoxInPut_DED = new System.Windows.Forms.GroupBox();
+            this.textBoxInPut_DED = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBoxInPut_DED = new System.Windows.Forms.TextBox();
             this.textBoxOutPut_DED = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -64,6 +64,14 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task6.V16
             this.groupBoxInPut_DED.TabStop = false;
             this.groupBoxInPut_DED.Text = "Ввод:";
             // 
+            // textBoxInPut_DED
+            // 
+            this.textBoxInPut_DED.Location = new System.Drawing.Point(0, 16);
+            this.textBoxInPut_DED.Multiline = true;
+            this.textBoxInPut_DED.Name = "textBoxInPut_DED";
+            this.textBoxInPut_DED.Size = new System.Drawing.Size(392, 301);
+            this.textBoxInPut_DED.TabIndex = 2;
+            // 
             // groupBox2
             // 
             this.groupBox2.Location = new System.Drawing.Point(396, 0);
@@ -82,14 +90,6 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task6.V16
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Вывод:";
-            // 
-            // textBoxInPut_DED
-            // 
-            this.textBoxInPut_DED.Location = new System.Drawing.Point(0, 16);
-            this.textBoxInPut_DED.Multiline = true;
-            this.textBoxInPut_DED.Name = "textBoxInPut_DED";
-            this.textBoxInPut_DED.Size = new System.Drawing.Size(392, 301);
-            this.textBoxInPut_DED.TabIndex = 2;
             // 
             // textBoxOutPut_DED
             // 
