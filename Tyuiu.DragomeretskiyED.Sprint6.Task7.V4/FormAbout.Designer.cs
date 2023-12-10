@@ -51,15 +51,13 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(177, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(284, 91);
+            this.label1.Size = new System.Drawing.Size(297, 117);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Разработчик: Драгомерецкий Е. Д,\r\nГруппа СМАРТб-23-1\r\n\r\nПрограмма разработана в р" +
-    "амках изучения языка С#\r\n\r\nТюменский Индустриальный Университет (с) 2023\r\nВысшая" +
-    " Школа Цифровых Технологий (с) 2023 ";
+            this.label1.Text = resources.GetString("label1.Text");
             // 
             // buttonOK_DED
             // 
-            this.buttonOK_DED.Location = new System.Drawing.Point(382, 143);
+            this.buttonOK_DED.Location = new System.Drawing.Point(393, 143);
             this.buttonOK_DED.Name = "buttonOK_DED";
             this.buttonOK_DED.Size = new System.Drawing.Size(75, 23);
             this.buttonOK_DED.TabIndex = 2;
@@ -71,7 +69,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task7.V4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 178);
+            this.ClientSize = new System.Drawing.Size(480, 178);
             this.Controls.Add(this.buttonOK_DED);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
