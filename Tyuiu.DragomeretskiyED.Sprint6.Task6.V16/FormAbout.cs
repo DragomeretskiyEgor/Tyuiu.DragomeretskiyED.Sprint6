@@ -16,5 +16,10 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task6.V16
         {
             InitializeComponent();
         }
+
+        private void buttonOK_DED_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

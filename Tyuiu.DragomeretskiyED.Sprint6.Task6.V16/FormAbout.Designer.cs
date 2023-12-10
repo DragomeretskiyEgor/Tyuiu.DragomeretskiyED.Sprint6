@@ -32,6 +32,7 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task6.V16
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonOK_DED = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,11 +55,22 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task6.V16
             this.label1.TabIndex = 2;
             this.label1.Text = resources.GetString("label1.Text");
             // 
+            // buttonOK_DED
+            // 
+            this.buttonOK_DED.Location = new System.Drawing.Point(497, 141);
+            this.buttonOK_DED.Name = "buttonOK_DED";
+            this.buttonOK_DED.Size = new System.Drawing.Size(87, 32);
+            this.buttonOK_DED.TabIndex = 3;
+            this.buttonOK_DED.Text = "Ок";
+            this.buttonOK_DED.UseVisualStyleBackColor = true;
+            this.buttonOK_DED.Click += new System.EventHandler(this.buttonOK_DED_Click);
+            // 
             // FormAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(596, 181);
+            this.Controls.Add(this.buttonOK_DED);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Name = "FormAbout";
@@ -73,5 +85,6 @@ namespace Tyuiu.DragomeretskiyED.Sprint6.Task6.V16
 
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonOK_DED;
     }
 }
